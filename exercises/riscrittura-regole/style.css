@@ -1,0 +1,16 @@
+html {
+    --color1: #011212;
+    --color2: #ff8800;
+    --size1: 100px;
+}
+
+body {
+    background-color: var(--color1);
+}
+
+.ball {
+    width: var(--size1);
+    height: var(--size1);
+    background-color: var(--color2);
+    border-radius: calc(var(--size1) / 2);
+}
