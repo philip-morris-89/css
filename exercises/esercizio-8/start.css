@@ -1,0 +1,16 @@
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 3fr 1fr;
+}
+
+section {
+  grid-row-start: 1;
+}
+
+#yellow {
+  grid-column-start: 1;
+}
+
+#red {
+  grid-column-start: 2;
+}
