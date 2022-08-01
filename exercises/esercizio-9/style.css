@@ -1,0 +1,157 @@
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-shadow: none;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Helvetica Neue", hevetica, sans-serif;
+  padding: 1rem 0;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+  padding: 1rem;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  box-shadow: 0 1rem 2rem rgba(0,0,0,0.25);
+  background: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.1));
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem 0.5rem;
+  align-items: center;
+}
+
+header .avatar {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: white;
+  margin: 0 0.5rem;
+  cursor: pointer;
+}
+
+header .username-and-date {
+  padding: 0 0.5rem;
+  flex-grow: 1;
+}
+
+header .username-and-date a {
+  font-size: 1rem;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+}
+
+header .username-and-date p {
+  color: rgba(0,0,0,0.5);
+  font-weight: 0.875rem;
+}
+
+header .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  margin: 0 0.5rem;
+  text-decoration: none;
+  font-family: Futura;
+  color: black;
+  font-size: 2rem;
+}
+
+.image-mask {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.image-mask img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: auto;
+}
+
+.actions {
+  display: flex;
+  flex-direction: row;
+  padding: 0.5rem;
+  align-items: center;
+}
+
+.actions a {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+}
+
+.actions a img {
+  width: auto;
+  height: 1.5rem;
+  opacity: 0.5;
+  flex-shrink: 0;
+}
+
+.actions a:hover img {
+  opacity: 1;
+}
+
+.actions a img.comment {
+  height: 1.4rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0.5rem 1.5rem; 0
+}
+
+.content p {
+  padding: 0 0.5rem;
+  color: rgba(0,0,0,0.5);
+}
+
+.content p b {
+  color: black;
+}
+
+/* Do gradient */
+/* Done */
+
+@media only screen and (min-width: 768px) {
+  main {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  main {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

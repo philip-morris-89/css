@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.4.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1024 1024" style="enable-background:new 0 0 1024 1024;" xml:space="preserve">
+<style type="text/css">
+	.st0{clip-path:url(#SVGID_00000049187218225266442810000014205486325037561527_);}
+</style>
+<symbol  id="Favorite" viewBox="-32 -30.5 64 61">
+	<g>
+		<path d="M14.7,30.5c0.9,0,1.9,0,2.9-0.1C23.9,29.7,31.1,24,32,13V9.3C31.2-1.2,23.2-14.2,0-30.5C-23.2-14.2-31.2-1.2-32,9.3V13
+			c0.9,11,8.1,16.7,14.4,17.4c1,0.1,2,0.1,2.9,0.1c7.2,0,10.7-3.1,14.7-7.9C4,27.4,7.4,30.5,14.7,30.5 M14.7,23.5
+			c-4.2,0-5.9-1.3-9.3-5.4L0,11.7l-5.4,6.4c-3.4,4.1-5.2,5.4-9.3,5.4c-0.7,0-1.4,0-2.2-0.1c-2.9-0.3-7.4-3.4-8.1-10.7v-3
+			c0.9-9.2,9.2-19.8,25-31.5C15.7-10.1,24.1,0.4,25,9.6v3.1c-0.7,7.3-5.2,10.4-8.1,10.7C16.1,23.5,15.4,23.5,14.7,23.5L14.7,23.5z"
+			/>
+	</g>
+</symbol>
+<g>
+	<g>
+		<defs>
+			<rect id="SVGID_1_" y="24.3" width="1024" height="975.5"/>
+		</defs>
+		<clipPath id="SVGID_00000121983276282358903340000002614909838467742894_">
+			<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+		</clipPath>
+		<g style="clip-path:url(#SVGID_00000121983276282358903340000002614909838467742894_);">
+			<g>
+				<defs>
+					<rect id="SVGID_00000032621853132063981070000013844558187262680762_" x="0" y="24.2" width="1024" height="975.7"/>
+				</defs>
+				<clipPath id="SVGID_00000045583044647084304990000000318391081391901588_">
+					<use xlink:href="#SVGID_00000032621853132063981070000013844558187262680762_"  style="overflow:visible;"/>
+				</clipPath>
+				<g style="clip-path:url(#SVGID_00000045583044647084304990000000318391081391901588_);">
+					
+						<use xlink:href="#Favorite"  width="64" height="61" id="XMLID_00000132810835880362721210000014216087118109993389_" x="-32" y="-30.5" transform="matrix(16.0002 0 0 -16.0002 512.0084 512)" style="overflow:visible;"/>
+				</g>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>
