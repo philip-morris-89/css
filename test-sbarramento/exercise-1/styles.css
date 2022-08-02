@@ -1,0 +1,170 @@
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-shadow: none;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Helvetica Neue", hevetica, sans-serif;
+  flex-grow: 1;
+  min-height: 100%;
+}
+
+body * {
+  border: 1px solid red;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  background-color: yellow;
+  flex-grow: 1;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+main header {
+  display: flex;
+  flex-direction: column;
+  background-color: aqua;
+}
+
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  width: 6rem;
+  height: 2rem;
+  background-color: blanchedalmond;
+}
+
+aside {
+  display: none;
+}
+
+header nav .dh {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 1;
+  font-weight: bold;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.25rem;
+  background-color: blueviolet;
+  color: white;
+  font-size: 0.875rem;
+}
+
+.search-container {
+  background-color: cornflowerblue;
+}
+
+.search-container,
+.search-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.search-box {
+  align-items: center;
+  justify-content: center;
+  min-height: 75vw;
+  background-color: darkgray;
+}
+
+.search-box input {
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+}
+
+.search-box button {
+  display: none;
+}
+
+.circle-btn {
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background-color: coral;
+}
+
+@media only screen and (min-width: 400px) {
+  .main-container {
+    flex-direction: row;
+  }
+  aside {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    max-width: 300px;
+    padding: 1rem;
+  }
+
+  main {
+    flex-grow: 1;
+  }
+
+  .search-container {
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    padding: 6rem;
+  }
+
+  .search-box {
+    min-height: 40vh;
+    width: 100%;
+  }
+
+  .search-box button {
+    display: flex;
+    flex-direction: column;
+    width: 5rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 0;
+    border-radius: 0.25rem;
+    margin-top: 2rem;
+    background-color: cyan;
+    font-weight: bold;
+  }
+
+  .circle-btn {
+    left: auto;
+    right: 2rem;
+    bottom: 2rem;
+  }
+
+  header nav .logo {
+    display: none;
+  }
+
+  header nav {
+    justify-content: end;
+  }
+}
