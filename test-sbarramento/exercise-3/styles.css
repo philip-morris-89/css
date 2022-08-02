@@ -1,0 +1,169 @@
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-shadow: none;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  min-height: 100%;
+  font-family: "Helvetica Neue", hevetica, sans-serif;
+}
+
+body * {
+  /* border: 1px solid red; */
+}
+
+.container {
+  display: grid;
+  grid-template-rows: auto;
+}
+
+header,
+nav,
+section,
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+header, nav {
+  height: 3rem;
+}
+
+.hero,
+main {
+  height: 30vh;
+}
+
+.banner,
+.extra,
+.image {
+  height: 20vh;
+}
+
+header {
+  background-color: darkblue;
+  color: white;
+}
+
+nav {
+  background-color: crimson;
+  color: white;
+}
+
+.hero {
+  background-color:cornflowerblue;
+  color: white;
+}
+
+main {
+  background-color:blue;
+  color: white;
+}
+
+.banner {
+  background-color: yellow;
+}
+
+.extra {
+  background-color:aquamarine;
+}
+
+.image {
+  background-color:lightblue;
+}
+
+/* --------------------------------------------------------------- Responsive */
+@media only screen and (min-width: 720px) {
+  .container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  header,
+  .hero {
+    grid-column-start: 1;
+    grid-column-end: 5;
+  }
+
+  .hero {
+    grid-row-start: 2;
+  }
+
+  nav {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 6;
+    height: auto;
+  }
+
+  main,
+  .banner,
+  .extra {
+    grid-column-start: 2;
+  }
+
+  main,
+  .banner {
+    grid-column-end: 5;
+  }
+
+  .extra {
+    grid-column-end: 4;
+  }
+
+  .image {
+    grid-column-start: 4;
+    grid-column-end: 5;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  header {
+    grid-column-end: 2;
+  }
+
+  nav {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    height: 3rem;
+  }
+
+  main {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    height: auto;
+  }
+
+  .image {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 3;
+  }
+
+  .extra {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 4;
+  }
+
+  .banner {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 5;
+  }
+}
