@@ -22,7 +22,133 @@ body * {
   /* border: 1px solid red; */
 }
 
+.page-container {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  background-color: aqua;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  color: white;
+  align-items: center;
+  padding: 0.5rem;
+  justify-content: space-between;
+}
+
+nav .logo {
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  padding: 0.5rem;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+nav span {
+  display: flex;
+  flex-direction: column;
+  width: 2rem;
+  height: 1px;
+  background-color: white;
+  position: relative;
+  margin-right: 0.5rem;
+}
+
+nav span:before,
+nav span:after {
+  content: "";
+  width: 2rem;
+  height: 1px;
+  background-color: white;
+  position: absolute;
+}
+
+nav span:before {
+  top: -0.5rem;
+}
+
+nav span:after {
+  top: 0.5rem;
+}
+
+nav form {
+  display: none;
+  padding: 0.5rem;
+}
+
+nav form input {
+  padding: 0.5rem 1rem;
+  text-align: center;
+}
+
+nav form button {
+  padding: 0.5rem 1rem;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  background-color: lightgrey;
+  width: 25%;
+  min-width: 250px;
+  align-items: center;
+  padding-top: 2rem;
+  display: none;
+}
+
+aside .circle {
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: azure;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+main ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 2rem;
+}
+
+main ul li {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 40%;
+  margin-bottom: 2rem;
+  height: 200px;
+  background-color: lightblue;
+}
+
 /* --------------------------------------------------------------- Responsive */
-@media only screen and (min-width: 400px) {
-  
+@media only screen and (min-width: 720px) {
+  main ul li {
+    flex-basis: 20%;
+  }
+
+  nav form {
+    display: flex;
+  }
+
+  nav span {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  aside {
+    display: flex;
+  }
 }
